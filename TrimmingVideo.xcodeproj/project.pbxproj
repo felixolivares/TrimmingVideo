@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCC96EDA1C7525C200516A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96ED91C7525C200516A75 /* main.m */; };
+		DCC96EDD1C7525C200516A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDC1C7525C200516A75 /* AppDelegate.m */; };
+		DCC96EE01C7525C200516A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDF1C7525C200516A75 /* ViewController.m */; };
+		DCC96EE31C7525C200516A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC96EE11C7525C200516A75 /* Main.storyboard */; };
+		DCC96EE51C7525C200516A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC96EE41C7525C200516A75 /* Assets.xcassets */; };
+		DCC96EE81C7525C200516A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC96EE61C7525C200516A75 /* LaunchScreen.storyboard */; };
+		DCC96EF31C7525C200516A75 /* TrimmingVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EF21C7525C200516A75 /* TrimmingVideoTests.m */; };
+		DCC96EFE1C7525C200516A75 /* TrimmingVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EFD1C7525C200516A75 /* TrimmingVideoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCC96EEF1C7525C200516A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC96ECD1C7525C200516A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC96ED41C7525C200516A75;
+			remoteInfo = TrimmingVideo;
+		};
+		DCC96EFA1C7525C200516A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC96ECD1C7525C200516A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC96ED41C7525C200516A75;
+			remoteInfo = TrimmingVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCC96ED51C7525C200516A75 /* TrimmingVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC96ED91C7525C200516A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCC96EDB1C7525C200516A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCC96EDC1C7525C200516A75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCC96EDE1C7525C200516A75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCC96EDF1C7525C200516A75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCC96EE21C7525C200516A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC96EE41C7525C200516A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCC96EE71C7525C200516A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCC96EE91C7525C200516A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC96EEE1C7525C200516A75 /* TrimmingVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimmingVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC96EF21C7525C200516A75 /* TrimmingVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrimmingVideoTests.m; sourceTree = "<group>"; };
+		DCC96EF41C7525C200516A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC96EF91C7525C200516A75 /* TrimmingVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimmingVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC96EFD1C7525C200516A75 /* TrimmingVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrimmingVideoUITests.m; sourceTree = "<group>"; };
+		DCC96EFF1C7525C200516A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC96ED21C7525C200516A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EEB1C7525C200516A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EF61C7525C200516A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCC96ECC1C7525C200516A75 = {
+			isa = PBXGroup;
+			children = (
+				DCC96ED71C7525C200516A75 /* TrimmingVideo */,
+				DCC96EF11C7525C200516A75 /* TrimmingVideoTests */,
+				DCC96EFC1C7525C200516A75 /* TrimmingVideoUITests */,
+				DCC96ED61C7525C200516A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC96ED61C7525C200516A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96ED51C7525C200516A75 /* TrimmingVideo.app */,
+				DCC96EEE1C7525C200516A75 /* TrimmingVideoTests.xctest */,
+				DCC96EF91C7525C200516A75 /* TrimmingVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC96ED71C7525C200516A75 /* TrimmingVideo */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96EDB1C7525C200516A75 /* AppDelegate.h */,
+				DCC96EDC1C7525C200516A75 /* AppDelegate.m */,
+				DCC96EDE1C7525C200516A75 /* ViewController.h */,
+				DCC96EDF1C7525C200516A75 /* ViewController.m */,
+				DCC96EE11C7525C200516A75 /* Main.storyboard */,
+				DCC96EE41C7525C200516A75 /* Assets.xcassets */,
+				DCC96EE61C7525C200516A75 /* LaunchScreen.storyboard */,
+				DCC96EE91C7525C200516A75 /* Info.plist */,
+				DCC96ED81C7525C200516A75 /* Supporting Files */,
+			);
+			path = TrimmingVideo;
+			sourceTree = "<group>";
+		};
+		DCC96ED81C7525C200516A75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96ED91C7525C200516A75 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCC96EF11C7525C200516A75 /* TrimmingVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96EF21C7525C200516A75 /* TrimmingVideoTests.m */,
+				DCC96EF41C7525C200516A75 /* Info.plist */,
+			);
+			path = TrimmingVideoTests;
+			sourceTree = "<group>";
+		};
+		DCC96EFC1C7525C200516A75 /* TrimmingVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96EFD1C7525C200516A75 /* TrimmingVideoUITests.m */,
+				DCC96EFF1C7525C200516A75 /* Info.plist */,
+			);
+			path = TrimmingVideoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC96ED41C7525C200516A75 /* TrimmingVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC96F021C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideo" */;
+			buildPhases = (
+				DCC96ED11C7525C200516A75 /* Sources */,
+				DCC96ED21C7525C200516A75 /* Frameworks */,
+				DCC96ED31C7525C200516A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrimmingVideo;
+			productName = TrimmingVideo;
+			productReference = DCC96ED51C7525C200516A75 /* TrimmingVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCC96EED1C7525C200516A75 /* TrimmingVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC96F051C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoTests" */;
+			buildPhases = (
+				DCC96EEA1C7525C200516A75 /* Sources */,
+				DCC96EEB1C7525C200516A75 /* Frameworks */,
+				DCC96EEC1C7525C200516A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC96EF01C7525C200516A75 /* PBXTargetDependency */,
+			);
+			name = TrimmingVideoTests;
+			productName = TrimmingVideoTests;
+			productReference = DCC96EEE1C7525C200516A75 /* TrimmingVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCC96EF81C7525C200516A75 /* TrimmingVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC96F081C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoUITests" */;
+			buildPhases = (
+				DCC96EF51C7525C200516A75 /* Sources */,
+				DCC96EF61C7525C200516A75 /* Frameworks */,
+				DCC96EF71C7525C200516A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC96EFB1C7525C200516A75 /* PBXTargetDependency */,
+			);
+			name = TrimmingVideoUITests;
+			productName = TrimmingVideoUITests;
+			productReference = DCC96EF91C7525C200516A75 /* TrimmingVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC96ECD1C7525C200516A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jose Felix Olivares Estrada";
+				TargetAttributes = {
+					DCC96ED41C7525C200516A75 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DCC96EED1C7525C200516A75 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DCC96ED41C7525C200516A75;
+					};
+					DCC96EF81C7525C200516A75 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DCC96ED41C7525C200516A75;
+					};
+				};
+			};
+			buildConfigurationList = DCC96ED01C7525C200516A75 /* Build configuration list for PBXProject "TrimmingVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC96ECC1C7525C200516A75;
+			productRefGroup = DCC96ED61C7525C200516A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC96ED41C7525C200516A75 /* TrimmingVideo */,
+				DCC96EED1C7525C200516A75 /* TrimmingVideoTests */,
+				DCC96EF81C7525C200516A75 /* TrimmingVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC96ED31C7525C200516A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC96EE81C7525C200516A75 /* LaunchScreen.storyboard in Resources */,
+				DCC96EE51C7525C200516A75 /* Assets.xcassets in Resources */,
+				DCC96EE31C7525C200516A75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EEC1C7525C200516A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EF71C7525C200516A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC96ED11C7525C200516A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC96EE01C7525C200516A75 /* ViewController.m in Sources */,
+				DCC96EDD1C7525C200516A75 /* AppDelegate.m in Sources */,
+				DCC96EDA1C7525C200516A75 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EEA1C7525C200516A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC96EF31C7525C200516A75 /* TrimmingVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC96EF51C7525C200516A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC96EFE1C7525C200516A75 /* TrimmingVideoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCC96EF01C7525C200516A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC96ED41C7525C200516A75 /* TrimmingVideo */;
+			targetProxy = DCC96EEF1C7525C200516A75 /* PBXContainerItemProxy */;
+		};
+		DCC96EFB1C7525C200516A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC96ED41C7525C200516A75 /* TrimmingVideo */;
+			targetProxy = DCC96EFA1C7525C200516A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCC96EE11C7525C200516A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC96EE21C7525C200516A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC96EE61C7525C200516A75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC96EE71C7525C200516A75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC96F001C7525C200516A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCC96F011C7525C200516A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC96F031C7525C200516A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrimmingVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCC96F041C7525C200516A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrimmingVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCC96F061C7525C200516A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrimmingVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrimmingVideo.app/TrimmingVideo";
+			};
+			name = Debug;
+		};
+		DCC96F071C7525C200516A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrimmingVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrimmingVideo.app/TrimmingVideo";
+			};
+			name = Release;
+		};
+		DCC96F091C7525C200516A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrimmingVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrimmingVideo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DCC96F0A1C7525C200516A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrimmingVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrimmingVideo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC96ED01C7525C200516A75 /* Build configuration list for PBXProject "TrimmingVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC96F001C7525C200516A75 /* Debug */,
+				DCC96F011C7525C200516A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC96F021C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC96F031C7525C200516A75 /* Debug */,
+				DCC96F041C7525C200516A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCC96F051C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC96F061C7525C200516A75 /* Debug */,
+				DCC96F071C7525C200516A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCC96F081C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC96F091C7525C200516A75 /* Debug */,
+				DCC96F0A1C7525C200516A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC96ECD1C7525C200516A75 /* Project object */;
+}
