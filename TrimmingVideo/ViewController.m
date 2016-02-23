@@ -321,6 +321,7 @@
     [self.trimmerView setShowsRulerView:NO];
     [self.trimmerView setTrackerColor:[UIColor cyanColor]];
     [self.trimmerView setDelegate:self];
+    [self.trimmerView setMaxLength:CMTimeGetSeconds(self.player.currentItem.asset.duration)];
     
     // important: reset subviews
     [self.trimmerView resetSubviews];
