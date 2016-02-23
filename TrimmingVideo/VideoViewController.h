@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VideoViewController : UIViewController
-
+- (instancetype)initWithVideoUrl:(NSURL *)url;
 @end

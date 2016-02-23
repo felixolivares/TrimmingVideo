@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCA3C5401C7ABC700069DEEF /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C53D1C7ABC700069DEEF /* LLSimpleCamera.m */; };
+		DCA3C5411C7ABC700069DEEF /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C53F1C7ABC700069DEEF /* UIImage+FixOrientation.m */; };
+		DCA3C5441C7ABCA80069DEEF /* RecordingVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5431C7ABCA80069DEEF /* RecordingVideoViewController.m */; };
+		DCA3C5471C7ACA120069DEEF /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5461C7ACA120069DEEF /* VideoViewController.m */; };
+		DCA3C54A1C7ACB520069DEEF /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5491C7ACB520069DEEF /* ViewUtils.m */; };
 		DCC96EDA1C7525C200516A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96ED91C7525C200516A75 /* main.m */; };
 		DCC96EDD1C7525C200516A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDC1C7525C200516A75 /* AppDelegate.m */; };
 		DCC96EE01C7525C200516A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDF1C7525C200516A75 /* ViewController.m */; };
@@ -15,6 +20,11 @@
 		DCC96EE81C7525C200516A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC96EE61C7525C200516A75 /* LaunchScreen.storyboard */; };
 		DCC96EF31C7525C200516A75 /* TrimmingVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EF21C7525C200516A75 /* TrimmingVideoTests.m */; };
 		DCC96EFE1C7525C200516A75 /* TrimmingVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EFD1C7525C200516A75 /* TrimmingVideoUITests.m */; };
+		DCC96F0C1C7528C000516A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC96F0B1C7528C000516A75 /* MobileCoreServices.framework */; };
+		DCC96F0E1C7528C700516A75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC96F0D1C7528C700516A75 /* AVFoundation.framework */; };
+		DCC96F171C75290C00516A75 /* ICGRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96F111C75290C00516A75 /* ICGRulerView.m */; };
+		DCC96F181C75290C00516A75 /* ICGThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96F131C75290C00516A75 /* ICGThumbView.m */; };
+		DCC96F191C75290C00516A75 /* ICGVideoTrimmerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96F161C75290C00516A75 /* ICGVideoTrimmerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCA3C53C1C7ABC700069DEEF /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLSimpleCamera.h; path = LLSimpleCamera/LLSimpleCamera.h; sourceTree = SOURCE_ROOT; };
+		DCA3C53D1C7ABC700069DEEF /* LLSimpleCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLSimpleCamera.m; path = LLSimpleCamera/LLSimpleCamera.m; sourceTree = SOURCE_ROOT; };
+		DCA3C53E1C7ABC700069DEEF /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FixOrientation.h"; path = "LLSimpleCamera/UIImage+FixOrientation.h"; sourceTree = SOURCE_ROOT; };
+		DCA3C53F1C7ABC700069DEEF /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FixOrientation.m"; path = "LLSimpleCamera/UIImage+FixOrientation.m"; sourceTree = SOURCE_ROOT; };
+		DCA3C5421C7ABCA80069DEEF /* RecordingVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingVideoViewController.h; sourceTree = "<group>"; };
+		DCA3C5431C7ABCA80069DEEF /* RecordingVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingVideoViewController.m; sourceTree = "<group>"; };
+		DCA3C5451C7ACA120069DEEF /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		DCA3C5461C7ACA120069DEEF /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		DCA3C5481C7ACB520069DEEF /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		DCA3C5491C7ACB520069DEEF /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		DCC96ED51C7525C200516A75 /* TrimmingVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC96ED91C7525C200516A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC96EDB1C7525C200516A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +71,15 @@
 		DCC96EF91C7525C200516A75 /* TrimmingVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimmingVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC96EFD1C7525C200516A75 /* TrimmingVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrimmingVideoUITests.m; sourceTree = "<group>"; };
 		DCC96EFF1C7525C200516A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC96F0B1C7528C000516A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DCC96F0D1C7528C700516A75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DCC96F101C75290C00516A75 /* ICGRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICGRulerView.h; path = Source/ICGRulerView.h; sourceTree = SOURCE_ROOT; };
+		DCC96F111C75290C00516A75 /* ICGRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICGRulerView.m; path = Source/ICGRulerView.m; sourceTree = SOURCE_ROOT; };
+		DCC96F121C75290C00516A75 /* ICGThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICGThumbView.h; path = Source/ICGThumbView.h; sourceTree = SOURCE_ROOT; };
+		DCC96F131C75290C00516A75 /* ICGThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICGThumbView.m; path = Source/ICGThumbView.m; sourceTree = SOURCE_ROOT; };
+		DCC96F141C75290C00516A75 /* ICGVideoTrimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICGVideoTrimmer.h; path = Source/ICGVideoTrimmer.h; sourceTree = SOURCE_ROOT; };
+		DCC96F151C75290C00516A75 /* ICGVideoTrimmerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICGVideoTrimmerView.h; path = Source/ICGVideoTrimmerView.h; sourceTree = SOURCE_ROOT; };
+		DCC96F161C75290C00516A75 /* ICGVideoTrimmerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ICGVideoTrimmerView.m; path = Source/ICGVideoTrimmerView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC96F0E1C7528C700516A75 /* AVFoundation.framework in Frameworks */,
+				DCC96F0C1C7528C000516A75 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +109,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA3C53B1C7ABC570069DEEF /* LLSimpleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3C5481C7ACB520069DEEF /* ViewUtils.h */,
+				DCA3C5491C7ACB520069DEEF /* ViewUtils.m */,
+				DCA3C53C1C7ABC700069DEEF /* LLSimpleCamera.h */,
+				DCA3C53D1C7ABC700069DEEF /* LLSimpleCamera.m */,
+				DCA3C53E1C7ABC700069DEEF /* UIImage+FixOrientation.h */,
+				DCA3C53F1C7ABC700069DEEF /* UIImage+FixOrientation.m */,
+			);
+			name = LLSimpleCamera;
+			sourceTree = "<group>";
+		};
 		DCC96ECC1C7525C200516A75 = {
 			isa = PBXGroup;
 			children = (
+				DCC96F0D1C7528C700516A75 /* AVFoundation.framework */,
+				DCC96F0B1C7528C000516A75 /* MobileCoreServices.framework */,
 				DCC96ED71C7525C200516A75 /* TrimmingVideo */,
 				DCC96EF11C7525C200516A75 /* TrimmingVideoTests */,
 				DCC96EFC1C7525C200516A75 /* TrimmingVideoUITests */,
@@ -101,6 +147,8 @@
 		DCC96ED71C7525C200516A75 /* TrimmingVideo */ = {
 			isa = PBXGroup;
 			children = (
+				DCA3C53B1C7ABC570069DEEF /* LLSimpleCamera */,
+				DCC96F0F1C7528FD00516A75 /* Source */,
 				DCC96EDB1C7525C200516A75 /* AppDelegate.h */,
 				DCC96EDC1C7525C200516A75 /* AppDelegate.m */,
 				DCC96EDE1C7525C200516A75 /* ViewController.h */,
@@ -110,6 +158,10 @@
 				DCC96EE61C7525C200516A75 /* LaunchScreen.storyboard */,
 				DCC96EE91C7525C200516A75 /* Info.plist */,
 				DCC96ED81C7525C200516A75 /* Supporting Files */,
+				DCA3C5421C7ABCA80069DEEF /* RecordingVideoViewController.h */,
+				DCA3C5431C7ABCA80069DEEF /* RecordingVideoViewController.m */,
+				DCA3C5451C7ACA120069DEEF /* VideoViewController.h */,
+				DCA3C5461C7ACA120069DEEF /* VideoViewController.m */,
 			);
 			path = TrimmingVideo;
 			sourceTree = "<group>";
@@ -138,6 +190,20 @@
 				DCC96EFF1C7525C200516A75 /* Info.plist */,
 			);
 			path = TrimmingVideoUITests;
+			sourceTree = "<group>";
+		};
+		DCC96F0F1C7528FD00516A75 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCC96F101C75290C00516A75 /* ICGRulerView.h */,
+				DCC96F111C75290C00516A75 /* ICGRulerView.m */,
+				DCC96F121C75290C00516A75 /* ICGThumbView.h */,
+				DCC96F131C75290C00516A75 /* ICGThumbView.m */,
+				DCC96F141C75290C00516A75 /* ICGVideoTrimmer.h */,
+				DCC96F151C75290C00516A75 /* ICGVideoTrimmerView.h */,
+				DCC96F161C75290C00516A75 /* ICGVideoTrimmerView.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +273,7 @@
 				TargetAttributes = {
 					DCC96ED41C7525C200516A75 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = C795L46JXW;
 					};
 					DCC96EED1C7525C200516A75 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -270,9 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA3C5471C7ACA120069DEEF /* VideoViewController.m in Sources */,
+				DCC96F181C75290C00516A75 /* ICGThumbView.m in Sources */,
+				DCA3C5411C7ABC700069DEEF /* UIImage+FixOrientation.m in Sources */,
 				DCC96EE01C7525C200516A75 /* ViewController.m in Sources */,
+				DCA3C54A1C7ACB520069DEEF /* ViewUtils.m in Sources */,
+				DCC96F171C75290C00516A75 /* ICGRulerView.m in Sources */,
 				DCC96EDD1C7525C200516A75 /* AppDelegate.m in Sources */,
 				DCC96EDA1C7525C200516A75 /* main.m in Sources */,
+				DCA3C5441C7ABCA80069DEEF /* RecordingVideoViewController.m in Sources */,
+				DCA3C5401C7ABC700069DEEF /* LLSimpleCamera.m in Sources */,
+				DCC96F191C75290C00516A75 /* ICGVideoTrimmerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrimmingVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideo;
@@ -422,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrimmingVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.TrimmingVideo;
@@ -496,6 +573,7 @@
 				DCC96F041C7525C200516A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCC96F051C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				DCC96F071C7525C200516A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCC96F081C7525C200516A75 /* Build configuration list for PBXNativeTarget "TrimmingVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				DCC96F0A1C7525C200516A75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

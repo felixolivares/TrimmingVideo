@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LLSimpleCamera.h"
 
 @interface RecordingVideoViewController : UIViewController
 

@@ -76,11 +76,12 @@
 
 - (void)resetSubviews
 {
-    [self setBackgroundColor:[UIColor blackColor]];
+    [self setBackgroundColor:[UIColor colorWithRed:48.0/255 green:48.0/255 blue:48.0/255 alpha:1]];
 
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+//    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(15, 0, [[UIScreen mainScreen] bounds].size.width - 30, 40)];
     [self addSubview:self.scrollView];
     [self.scrollView setDelegate:self];
     [self.scrollView setShowsHorizontalScrollIndicator:NO];
