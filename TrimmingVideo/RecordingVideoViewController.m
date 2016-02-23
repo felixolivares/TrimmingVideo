@@ -45,7 +45,7 @@
     [self registerAllNotification];
     
     //Number of seconds available for video
-    self.secondsLeft = 170;
+    self.secondsLeft = 10;
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     
@@ -245,8 +245,30 @@
     self.secondsLeft--;
     minutes = (self.secondsLeft % 3600) / 60;
     seconds = (self.secondsLeft %3600) % 60;
-    self.timerLabel.text = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
-    NSLog(@"%02d:%02d", minutes, seconds);
+    
+    if (minutes == 0 && seconds < 0) {
+        self.timerLabel.text = [NSString stringWithFormat:@"00:00"];
+        [self.timer invalidate];
+//        [self setCountdown];
+        self.segmentedControl.hidden = YES;
+        self.flashButton.hidden = NO;
+        self.switchButton.hidden = NO;
+        self.recordingDot.alpha  = 0;
+        
+        self.snapButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.snapButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        
+        [self.camera stopRecording:^(LLSimpleCamera *camera, NSURL *outputFileUrl, NSError *error) {
+            //            VideoViewController *vc = [[VideoViewController alloc] initWithVideoUrl:outputFileUrl];
+            //            [self.navigationController pushViewController:vc animated:YES];
+            //            ViewController *vc = [[ViewController alloc]initWithVideoUrl:outputFileUrl];
+            //            [self.navigationController pushViewController:vc animated:YES];
+            [self performSegueWithIdentifier:@"toTrim" sender:outputFileUrl];
+        }];
+    }else{
+        self.timerLabel.text = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
+    }
+    
 }
 
 - (void)segmentedControlValueChanged:(UISegmentedControl *)control
