@@ -26,6 +26,7 @@
 @property (strong, nonatomic) UILabel *timerLabel;
 @property (strong, nonatomic) UIView *timerBackground;
 @property (strong, nonatomic) UIView *timerContainer;
+@property (strong, nonatomic) UIView *recordingDot;
 
 @property (readwrite, assign) int secondsLeft;
 @property (readwrite, assign) BOOL isShowingLandscapeView;
@@ -189,11 +190,19 @@
     
     self.timerLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 21)];
     self.timerLabel.center = self.timerContainer.contentCenter;
-//    self.timerLabel.right = 3.0f;
+    self.timerLabel.left = -10.0f;
     self.timerLabel.textColor = [UIColor whiteColor];
     [self.timerLabel setFont:[UIFont fontWithName:@"Helvetica" size:12]];
     self.timerLabel.textAlignment = NSTextAlignmentRight;
     [self.timerContainer addSubview:self.timerLabel];
+    
+    self.recordingDot = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 15, 15)];
+    self.recordingDot.center = self.timerContainer.contentCenter;
+    self.recordingDot.left = 1.0f;
+    self.recordingDot.layer.cornerRadius = self.recordingDot.width / 2.0f;
+    self.recordingDot.backgroundColor = [UIColor redColor];
+    self.recordingDot.alpha = 0;
+    [self.timerContainer addSubview:self.recordingDot];
     
     if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation))
     {
@@ -225,6 +234,13 @@
 
 -(void) updateCountdown {
     int minutes, seconds;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.recordingDot.alpha = 0;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.recordingDot.alpha = 1;
+        }];
+    }];
     
     self.secondsLeft--;
     minutes = (self.secondsLeft % 3600) / 60;
@@ -284,6 +300,11 @@
         self.segmentedControl.hidden = YES;
         self.flashButton.hidden = YES;
         self.switchButton.hidden = YES;
+        [UIView animateWithDuration:0.1 animations:^{
+            self.timerLabel.left = 2.0f;
+        } completion:^(BOOL finished) {
+            self.recordingDot.alpha = 1;
+        }];
         
         self.snapButton.layer.borderColor = [UIColor redColor].CGColor;
         self.snapButton.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
@@ -299,6 +320,7 @@
         self.segmentedControl.hidden = YES;
         self.flashButton.hidden = NO;
         self.switchButton.hidden = NO;
+        self.recordingDot.alpha  = 0;
         
         self.snapButton.layer.borderColor = [UIColor whiteColor].CGColor;
         self.snapButton.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];

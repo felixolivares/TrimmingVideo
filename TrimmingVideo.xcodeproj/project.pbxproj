@@ -12,6 +12,7 @@
 		DCA3C5441C7ABCA80069DEEF /* RecordingVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5431C7ABCA80069DEEF /* RecordingVideoViewController.m */; };
 		DCA3C5471C7ACA120069DEEF /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5461C7ACA120069DEEF /* VideoViewController.m */; };
 		DCA3C54A1C7ACB520069DEEF /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5491C7ACB520069DEEF /* ViewUtils.m */; };
+		DCA5180E1C7C07090078F803 /* triangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA5180D1C7C07090078F803 /* triangleView.m */; };
 		DCC96EDA1C7525C200516A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96ED91C7525C200516A75 /* main.m */; };
 		DCC96EDD1C7525C200516A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDC1C7525C200516A75 /* AppDelegate.m */; };
 		DCC96EE01C7525C200516A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96EDF1C7525C200516A75 /* ViewController.m */; };
@@ -55,6 +56,8 @@
 		DCA3C5461C7ACA120069DEEF /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		DCA3C5481C7ACB520069DEEF /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
 		DCA3C5491C7ACB520069DEEF /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
+		DCA5180C1C7C07090078F803 /* triangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangleView.h; sourceTree = "<group>"; };
+		DCA5180D1C7C07090078F803 /* triangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = triangleView.m; sourceTree = "<group>"; };
 		DCC96ED51C7525C200516A75 /* TrimmingVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC96ED91C7525C200516A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC96EDB1C7525C200516A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				DCA3C5431C7ABCA80069DEEF /* RecordingVideoViewController.m */,
 				DCA3C5451C7ACA120069DEEF /* VideoViewController.h */,
 				DCA3C5461C7ACA120069DEEF /* VideoViewController.m */,
+				DCA5180C1C7C07090078F803 /* triangleView.h */,
+				DCA5180D1C7C07090078F803 /* triangleView.m */,
 			);
 			path = TrimmingVideo;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				DCC96EDA1C7525C200516A75 /* main.m in Sources */,
 				DCA3C5441C7ABCA80069DEEF /* RecordingVideoViewController.m in Sources */,
 				DCA3C5401C7ABC700069DEEF /* LLSimpleCamera.m in Sources */,
+				DCA5180E1C7C07090078F803 /* triangleView.m in Sources */,
 				DCC96F191C75290C00516A75 /* ICGVideoTrimmerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

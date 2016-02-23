@@ -11,6 +11,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AVFoundation/AVFoundation.h>
 #import "ViewUtils.h"
+#import "triangleView.h"
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, ICGVideoTrimmerDelegate>
 
@@ -41,6 +42,9 @@
 @property (strong, nonatomic) UIView *navigationBar;
 @property (strong, nonatomic) UILabel *navigationTitle;
 
+@property (strong, nonatomic) UIView *playButton;
+@property (strong, nonatomic) triangleView *triangle;
+
 @property (strong, nonatomic) NSString *tempVideoPath;
 @property (strong, nonatomic) AVAssetExportSession *exportSession;
 @property (strong, nonatomic) AVAsset *asset;
@@ -48,6 +52,8 @@
 @property (assign, nonatomic) CGFloat startTime;
 @property (assign, nonatomic) CGFloat stopTime;
 @property (assign, nonatomic) CGSize videoSize;
+
+
 
 @property (assign, nonatomic) CGFloat firstTime;
 
@@ -81,14 +87,31 @@
     self.navigationTitle.textColor = [UIColor whiteColor];
     [self.navigationBar addSubview:self.navigationTitle];
     
-    
     self.videoPlayer = [[UIView alloc]initWithFrame:CGRectMake(5, self.navigationBar.frame.origin.y + self.navigationBar.frame.size.height + 15, screenWidth - 10, 225)];
     self.videoLayer = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.videoPlayer.frame.size.width, self.videoPlayer.frame.size.height)];
     self.videoPlayer.backgroundColor = [UIColor colorWithRed:48.0/255 green:48.0/255 blue:48.0/255 alpha:1];
     self.videoLayer.backgroundColor = [UIColor clearColor];
     [self.videoPlayer addSubview:self.videoLayer];
     
-    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(15, self.videoPlayer.frame.origin.y + self.videoPlayer.frame.size.height + 15, screenWidth - 30, 8)];
+    self.playButton = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    self.playButton.center = self.videoPlayer.contentCenter;
+    self.playButton.clipsToBounds = YES;
+    self.playButton.layer.cornerRadius = self.playButton.width / 2.0f;
+    self.playButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.playButton.layer.borderWidth = 2.0f;
+    self.playButton.backgroundColor = [UIColor clearColor];
+    self.playButton.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    self.playButton.layer.shouldRasterize = YES;
+    self.playButton.alpha = 0;
+    [self.videoPlayer addSubview:self.playButton];
+    
+    self.triangle = [[triangleView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    self.triangle.backgroundColor = [UIColor clearColor];
+    self.triangle.center = self.playButton.contentCenter;
+    self.triangle.left = 13.0f;
+    [self.playButton addSubview:self.triangle];
+    
+    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(15, self.videoPlayer.frame.origin.y + self.videoPlayer.frame.size.height + 30, screenWidth - 30, 8)];
     [self.slider addTarget:self action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
     [self.slider setBackgroundColor:[UIColor clearColor]];
     self.slider.minimumValue = 0.0;
@@ -104,7 +127,7 @@
     self.trimmerContainer.left = 15.0f;
     
     
-    self.trimmerView = [[ICGVideoTrimmerView alloc]initWithFrame:CGRectMake(0, self.slider.frame.origin.y + self.slider.frame.size.height + 30, screenWidth, 40)];
+    self.trimmerView = [[ICGVideoTrimmerView alloc]initWithFrame:CGRectMake(0, self.slider.frame.origin.y + self.slider.frame.size.height + 40, screenWidth, 40)];
 //    self.trimmerView.center = self.trimmerContainer.contentCenter;
     self.trimmerView.backgroundColor = [UIColor colorWithRed:48.0/255 green:48.0/255 blue:48.0/255 alpha:1];
 //    [self.trimmerContainer addSubview:self.trimmerView];
@@ -283,7 +306,9 @@
     self.originalVideoInfo.text = [NSString stringWithFormat:@"%d x %d, %@, %.2f MB", (int)self.videoSize.width, (int)self.videoSize.height, [self getDuration:(int)CMTimeGetSeconds(self.player.currentItem.asset.duration)], self.totalFileSize];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnVideoLayer:)];
+    UITapGestureRecognizer *tapPlay = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnVideoLayer:)];
     [self.videoLayer addGestureRecognizer:tap];
+    [self.playButton addGestureRecognizer:tapPlay];
     
     self.videoPlaybackPosition = 0;
     
@@ -392,9 +417,11 @@
 - (void)tapOnVideoLayer:(UITapGestureRecognizer *)tap
 {
     if (self.isPlaying) {
+        self.playButton.alpha = 1;
         [self.player pause];
         [self stopPlaybackTimeChecker];
     }else {
+        self.playButton.alpha = 0;
         [self.player play];
         [self startPlaybackTimeChecker];
     }
@@ -463,5 +490,13 @@
 {
     return NO;
 }
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+//{
+//    if ([touch.view isDescendantOfView:self.videoPlayer]) {
+//        return YES;
+//    }
+//    return YES;
+//}
 
 @end
